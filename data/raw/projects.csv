@@ -1,0 +1,42 @@
+project_id,project_name,program,department,project_manager,start_date_planned,end_date_planned,start_date_actual,end_date_actual,budget_planned_eur,status
+PRJ-0001,Modernisation Site A - lot 1,Refonte Atelier C,Méthodes,Gilles Parent,2026-01-10,2027-04-26,2026-01-10,,340073.08,En cours
+PRJ-0002,Qualification Produit D - lot 2,Qualification Produit D,Méthodes,Isaac Baudry,2024-01-28,2024-12-23,2024-02-01,2024-12-31,895977.45,Terminé
+PRJ-0003,Qualification Produit D - lot 3,Qualification Produit D,Ingénierie,Alexandre Bouchet,2024-07-23,2025-05-01,2024-07-23,2025-04-14,239485.77,Terminé
+PRJ-0004,Refonte Atelier C - lot 4,Refonte Atelier C,Qualité,Astrid Henry,2024-07-30,2025-09-16,2024-08-05,2025-10-07,515887.37,Terminé
+PRJ-0005,Extension Ligne B - lot 5,Modernisation Site A,Ingénierie,Hugues Reynaud,2024-06-16,2025-08-29,2024-06-19,,1557673.74,En cours
+PRJ-0006,Qualification Produit D - lot 6,Extension Ligne B,Qualité,Stéphanie-Olivie Guillaume,2025-10-22,2027-01-01,2025-10-27,,1192622.52,En cours
+PRJ-0007,Qualification Produit D - lot 7,Refonte Atelier C,Méthodes,Hugues Le Boulanger,2025-07-23,2026-06-29,2025-07-30,,288179.64,En cours
+PRJ-0008,Modernisation Site A - lot 8,Modernisation Site A,Qualité,Bernadette Techer,2024-04-29,2025-07-04,2024-05-03,2025-08-14,376400.81,Terminé
+PRJ-0009,Modernisation Site A - lot 9,Extension Ligne B,Ingénierie,Victoire du Faure,2024-01-03,2025-06-20,2024-01-03,,1718362.11,En cours
+PRJ-0010,Modernisation Site A - lot 10,Refonte Atelier C,Ingénierie,Sébastien de la Fontaine,2025-04-11,2026-05-21,2025-04-15,,240411.62,En cours
+PRJ-0011,Extension Ligne B - lot 11,Refonte Atelier C,Méthodes,Benoît de Aubert,2024-01-28,2024-09-03,2024-02-05,2024-09-30,120910.37,Terminé
+PRJ-0012,Modernisation Site A - lot 12,Refonte Atelier C,Méthodes,Guy-Honoré Blot,2025-03-05,2025-11-20,2025-03-09,2025-12-22,1557768.4,Terminé
+PRJ-0013,Extension Ligne B - lot 13,Refonte Atelier C,Achats,Édouard-Thierry Lemaire,2025-07-22,2026-06-06,2025-07-22,2026-08-03,85575.3,Terminé
+PRJ-0014,Modernisation Site A - lot 14,Refonte Atelier C,Ingénierie,Grégoire Munoz,2024-04-07,2025-01-03,2024-04-16,2025-02-05,1328002.12,Terminé
+PRJ-0015,Modernisation Site A - lot 15,Qualification Produit D,Méthodes,Frédéric Baudry-Gomez,2025-01-31,2025-12-08,2025-01-31,,1630672.75,En cours
+PRJ-0016,Modernisation Site A - lot 16,Extension Ligne B,Qualité,Aimé Imbert,2024-01-11,2025-05-03,2024-01-12,,1150666.18,En cours
+PRJ-0017,Qualification Produit D - lot 17,Modernisation Site A,Qualité,Lucy Guyot de la Lemonnier,2024-10-28,2026-01-02,2024-10-29,,150927.66,En cours
+PRJ-0018,Qualification Produit D - lot 18,Qualification Produit D,Qualité,Sophie Brunet,2024-10-16,2025-09-27,2024-10-21,,726636.99,En cours
+PRJ-0019,Extension Ligne B - lot 19,Extension Ligne B,Qualité,Roger-Martin Barbier,2024-01-04,2025-06-16,2024-01-04,2025-07-13,926248.2,Terminé
+PRJ-0020,Refonte Atelier C - lot 20,Modernisation Site A,Ingénierie,Luc Munoz,2025-04-06,2026-01-23,2025-04-13,2026-01-08,1761469.52,Terminé
+PRJ-0021,Extension Ligne B - lot 21,Modernisation Site A,Méthodes,Christophe Valette,2025-05-03,2025-12-31,2025-05-04,,320330.01,En cours
+PRJ-0022,Refonte Atelier C - lot 22,Refonte Atelier C,Ingénierie,Pénélope-Marie Hubert,2025-03-19,2026-04-12,2025-03-25,,1267807.61,En cours
+PRJ-0023,Extension Ligne B - lot 23,Qualification Produit D,Méthodes,Thibaut Roux,2025-10-31,2026-11-07,2025-11-11,,879994.03,En cours
+PRJ-0024,Modernisation Site A - lot 24,Refonte Atelier C,Ingénierie,Élise du Giraud,2024-12-28,2025-10-11,2024-12-30,2025-12-19,1179251.51,Terminé
+PRJ-0025,Qualification Produit D - lot 25,Extension Ligne B,Méthodes,Augustin Noël,2025-06-25,2026-01-28,2025-06-30,2026-01-31,608122.78,Terminé
+PRJ-0026,Refonte Atelier C - lot 26,Extension Ligne B,Qualité,Adrien Gilles Le Maillet,2024-05-11,2025-01-26,2024-05-11,,1596534.57,En cours
+PRJ-0027,Modernisation Site A - lot 27,Modernisation Site A,Achats,Suzanne Laporte,2024-03-28,2024-10-08,2024-04-02,2024-10-26,210303.4,Terminé
+PRJ-0028,Extension Ligne B - lot 28,Refonte Atelier C,Achats,Xavier Gaillard,2025-04-28,2026-03-14,2025-04-28,2026-03-24,1204659.81,Terminé
+PRJ-0029,Extension Ligne B - lot 29,Extension Ligne B,Méthodes,Michel Pascal,2024-06-24,2025-06-12,2024-06-30,2025-04-23,1513878.31,Terminé
+PRJ-0030,Refonte Atelier C - lot 30,Modernisation Site A,Méthodes,Agathe Legrand,2024-10-23,2025-04-21,2024-10-30,2025-05-23,1402847.81,Terminé
+PRJ-0031,Qualification Produit D - lot 31,Qualification Produit D,Ingénierie,Catherine-Bernadette Le Roux,2026-01-08,2026-08-21,2026-01-08,2026-08-31,576934.48,Terminé
+PRJ-0032,Refonte Atelier C - lot 32,Extension Ligne B,Ingénierie,Tristan-Augustin Dupré,2025-01-07,2026-01-27,2025-01-19,2026-02-18,1063917.0,Terminé
+PRJ-0033,Modernisation Site A - lot 33,Extension Ligne B,Ingénierie,Vincent Bertrand de Leclercq,2024-12-09,2026-05-23,2024-12-14,,1591020.03,En cours
+PRJ-0034,Qualification Produit D - lot 34,Qualification Produit D,Achats,Pierre Guillou-Bonnin,2024-04-29,2025-01-17,2024-04-29,2025-03-10,410272.11,Terminé
+PRJ-0035,Qualification Produit D - lot 35,Refonte Atelier C,Méthodes,Édouard Laurent,2026-01-03,2026-05-25,2026-01-03,2026-06-09,1467761.1,Terminé
+PRJ-0036,Qualification Produit D - lot 36,Qualification Produit D,Qualité,Christiane Le Marchand,2024-09-05,2025-05-23,2024-09-07,2025-06-29,1001642.71,Terminé
+PRJ-0037,Refonte Atelier C - lot 37,Modernisation Site A,Qualité,Laure Nicolas,2024-08-31,2025-10-02,2024-08-31,2025-10-16,952209.05,Terminé
+PRJ-0038,Modernisation Site A - lot 38,Refonte Atelier C,Ingénierie,Capucine Carpentier,2026-02-25,2026-12-25,2026-03-04,,997264.85,En cours
+PRJ-0039,Qualification Produit D - lot 39,Qualification Produit D,Ingénierie,Eugène Jean-Pereira,2024-03-04,2025-04-23,2024-03-04,2025-05-08,1179160.19,Terminé
+PRJ-0040,Refonte Atelier C - lot 40,Qualification Produit D,Qualité,Christophe Berthelot du Joly,2024-01-01,2025-03-04,2024-01-01,,1045055.24,En cours
+PRJ-0004,Refonte Atelier C - lot 4,Refonte Atelier C,Qualité,Astrid Henry,2024-07-30,2025-09-16,2024-08-05,2025-10-07,515887.37,Terminé

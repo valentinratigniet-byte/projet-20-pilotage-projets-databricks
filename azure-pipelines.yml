@@ -1,0 +1,56 @@
+# Pipeline Azure DevOps — même job que la CI GitHub Actions (.github/workflows/ci.yml),
+# fourni pour démontrer la maîtrise d'Azure DevOps demandée par l'offre. Le repo
+# reste hébergé sur GitHub (convention du portfolio) ; ce fichier est prêt à être
+# branché sur un projet Azure DevOps via "Pipelines > New > GitHub" en pointant
+# ce repo.
+trigger:
+  branches:
+    include:
+      - main
+
+pr:
+  branches:
+    include:
+      - main
+
+pool:
+  vmImage: "ubuntu-latest"
+
+variables:
+  PYSPARK_PYTHON: python3
+
+stages:
+  - stage: DataQuality
+    displayName: "Data engineering — tests PySpark"
+    jobs:
+      - job: TestTransformations
+        displayName: "Générer les données + tester le pipeline (pytest/PySpark)"
+        steps:
+          - task: UsePythonVersion@0
+            inputs:
+              versionSpec: "3.12"
+            displayName: "Sélectionner Python 3.12"
+
+          - task: JavaToolInstaller@0
+            inputs:
+              versionSpec: "17"
+              jdkArchitectureOption: "x64"
+              jdkSourceOption: "PreInstalled"
+            displayName: "Sélectionner le JDK 17 (requis par PySpark)"
+
+          - script: |
+              python -m pip install --upgrade pip
+              pip install -r requirements.txt
+            displayName: "Installer les dépendances (pyspark, pytest, faker)"
+
+          - script: python data/generate_data.py
+            displayName: "Générer le jeu de données synthétique (data/raw/)"
+
+          - script: python -m pytest tests/ -v --junitxml=test-results.xml
+            displayName: "Exécuter les tests (nettoyage, contrôles qualité, KPI)"
+
+          - task: PublishTestResults@2
+            condition: succeededOrFailed()
+            inputs:
+              testResultsFiles: "test-results.xml"
+              testRunTitle: "Tests PySpark — pilotage de projets"

@@ -1,0 +1,132 @@
+risk_id,project_id,category,description,probability,impact,status,date_raised,date_closed,severity
+RSK-00001,PRJ-0001,Fournisseur,Horizon absence consulter particulier françois.,1,4,Ouvert,2026-07-09,,4
+RSK-00002,PRJ-0001,Qualité,Tel effacer facile effort plus.,1,3,Clos,2026-01-21,2026-07-08,3
+RSK-00003,PRJ-0001,Technique,Accent attention fixe pur droit.,5,5,Ouvert,2026-03-29,,25
+RSK-00004,PRJ-0001,Qualité,Robe auprès intéresser véritable accuser public auteur ramasser papa.,3,2,Clos,2026-05-25,2026-06-12,6
+RSK-00005,PRJ-0001,Fournisseur,Prier conclure école sentiment bois vision appel raconter.,3,4,Clos,2026-07-20,2026-08-22,12
+RSK-00006,PRJ-0002,Qualité,Trouver portier avec sept résister heure robe chambre papa surtout moi.,4,3,Clos,2024-05-27,2026-07-28,12
+RSK-00007,PRJ-0002,Qualité,Deux réussir tôt beaux somme ensemble remercier éclater.,4,4,Clos,2025-10-06,2026-03-06,16
+RSK-00008,PRJ-0002,Qualité,Fidèle papier étrange vin quoi fait recherche jardin.,1,5,Clos,2024-11-18,2026-04-11,5
+RSK-00009,PRJ-0002,Fournisseur,Chanter remettre accompagner point étranger chaud décrire mal désespoir foi.,2,3,Ouvert,2026-04-15,,6
+RSK-00010,PRJ-0002,Qualité,Posséder sein tel lisser peine volonté pain rejoindre.,1,5,Ouvert,2024-02-22,,5
+RSK-00011,PRJ-0003,Qualité,Distinguer quart inquiétude pur demain certain seulement environ supérieur.,4,5,Ouvert,2025-03-10,,20
+RSK-00012,PRJ-0003,Planning,Chant queue prochain port terre ce distinguer apparence content foi.,2,3,Clos,2024-12-20,2025-12-10,6
+RSK-00013,PRJ-0003,Technique,Livrer employer intérieur condamner tantôt cercle souffrance mon témoin soumettre.,3,1,Ouvert,2026-03-28,,3
+RSK-00014,PRJ-0003,Technique,Établir dès rencontrer ennemi chat dieu.,5,3,Ouvert,2024-10-28,,15
+RSK-00015,PRJ-0003,Qualité,Emmener avancer apparence approcher interroger preuve.,5,4,Ouvert,2024-08-24,,20
+RSK-00016,PRJ-0004,Qualité,Quartier bientôt tache sable endormir mentir trait comment heure surtout.,1,2,Clos,2025-09-17,2026-01-07,2
+RSK-00017,PRJ-0004,Planning,Joli chiffre content eaux contenter foule aussi règle regarder partout.,1,3,Ouvert,2024-09-01,,3
+RSK-00018,PRJ-0004,Fournisseur,Retourner produire sans court empêcher.,2,2,Ouvert,2025-03-17,,4
+RSK-00019,PRJ-0004,Technique,Lit vouloir si bien lutte quitter.,5,5,Ouvert,2026-08-21,,25
+RSK-00020,PRJ-0005,Technique,Minute fauteuil éclat acheter révéler chef.,1,4,Ouvert,2024-08-15,,4
+RSK-00021,PRJ-0005,Planning,Terrain souffler cercle auprès nourrir ligne année soin sorte moi.,5,5,Ouvert,2026-02-14,,25
+RSK-00022,PRJ-0005,Qualité,Marché obtenir suivant hésiter froid.,3,2,Ouvert,2025-11-20,,6
+RSK-00023,PRJ-0005,Qualité,Principe complètement compagnie rideau lentement.,4,5,Clos,2025-02-11,2025-05-30,20
+RSK-00024,PRJ-0006,Technique,Moins parent cinq ventre vert car mériter mari hiver esprit.,3,3,Ouvert,2026-08-03,,9
+RSK-00025,PRJ-0007,Fournisseur,Médecin combien aspect beau air amuser devant.,5,2,Ouvert,2026-04-28,,10
+RSK-00026,PRJ-0007,Qualité,Direction emporter marché parti système tour attitude soir.,2,4,Clos,2025-12-20,2025-12-30,8
+RSK-00027,PRJ-0008,Planning,Attention quatre serrer ciel.,4,5,Ouvert,2026-06-08,,20
+RSK-00028,PRJ-0008,Fournisseur,Puisque glace apporter obliger d'abord.,2,3,Clos,2026-03-20,2026-06-09,6
+RSK-00029,PRJ-0008,Qualité,Trait miser impression du sérieux inquiéter pouvoir peu route écrire.,5,5,Clos,2025-11-13,2025-12-08,25
+RSK-00030,PRJ-0008,Technique,Hiver chemise partie quelque silence.,3,4,Ouvert,2026-06-15,,12
+RSK-00031,PRJ-0009,Fournisseur,Phrase condition éclater ceci violent tellement.,5,1,Clos,2024-08-08,2024-10-04,5
+RSK-00032,PRJ-0009,Technique,Partir feu doucement étaler rentrer mêler certes sourd signe.,2,2,Ouvert,2025-02-10,,4
+RSK-00033,PRJ-0010,Technique,Sien loi mal compte.,4,5,Ouvert,2025-05-09,,20
+RSK-00034,PRJ-0010,Fournisseur,Creuser vite étrange chef violent reconnaître.,4,4,Clos,2025-12-04,2026-04-01,16
+RSK-00035,PRJ-0010,Technique,Comment véritable emmener installer sommeil.,3,4,Clos,2025-10-03,2025-11-16,12
+RSK-00036,PRJ-0010,Qualité,Choix tuer chute ramasser étudier en.,3,4,Clos,2025-05-26,2026-03-11,12
+RSK-00037,PRJ-0011,Fournisseur,Difficile aller abattre réponse.,4,4,Clos,2026-05-07,2026-08-24,16
+RSK-00038,PRJ-0011,Technique,Rose repas arrière voici barbe loin en doux paquet.,4,4,Ouvert,2025-11-28,,16
+RSK-00039,PRJ-0011,Qualité,Bas rouge subir gris présence ainsi fond.,1,1,Ouvert,2025-10-18,,1
+RSK-00040,PRJ-0011,Qualité,Dieu affirmer remplir poitrine.,2,2,Clos,2024-11-24,2026-05-15,4
+RSK-00041,PRJ-0012,Qualité,Rose plus accent enfin bon gros espace aller acte car.,5,3,Clos,2025-09-25,2026-06-14,15
+RSK-00042,PRJ-0012,Technique,Vouloir perte angoisse papier humide étouffer minute presser saluer prière.,3,3,Ouvert,2025-06-12,,9
+RSK-00043,PRJ-0013,Technique,Seigneur dessiner hôtel impression approcher appartement soir.,1,2,Clos,2026-06-24,2026-08-15,2
+RSK-00044,PRJ-0013,Technique,Baisser surveiller nature papier ministre résultat occuper mon coup.,1,2,Clos,2026-03-08,2026-04-26,2
+RSK-00045,PRJ-0013,Qualité,Appartenir tomber verser sauver prononcer nous tête.,1,4,Clos,2025-10-19,2026-02-12,4
+RSK-00046,PRJ-0013,Qualité,Haut abattre également car quand si regarder chef.,2,5,Ouvert,2026-08-29,,10
+RSK-00047,PRJ-0013,Qualité,Prêter sembler public manger assurer reposer delà condamner anglais lieu.,2,5,Ouvert,2025-12-29,,10
+RSK-00048,PRJ-0014,Qualité,Rapport construire jamais trente donner vol assurer valeur droite vingt éprouver.,4,5,Ouvert,2025-06-13,,20
+RSK-00049,PRJ-0014,Planning,Étrange grand aucun table courir curiosité professeur.,1,2,Ouvert,2025-08-12,,2
+RSK-00050,PRJ-0015,Technique,Savoir entrer imaginer mariage fou aucun rappeler inutile mon.,5,2,Clos,2025-03-23,2025-05-04,10
+RSK-00051,PRJ-0015,Technique,Argent prince abri lorsque appartenir caresser réponse âgé tombe autre.,1,4,Ouvert,2025-06-04,,4
+RSK-00052,PRJ-0015,Planning,Fixer amener été deviner profond ville vendre.,3,5,Clos,2026-04-16,2026-08-06,15
+RSK-00053,PRJ-0015,Technique,Présent sortir arme user matin quelque.,2,2,Ouvert,2025-10-26,,4
+RSK-00054,PRJ-0016,Planning,Demander hauteur glace quel avis battre forcer condamner céder vide.,1,1,Clos,2025-10-22,2026-04-26,1
+RSK-00055,PRJ-0016,Fournisseur,Approcher quitter caresser traverser cri épaule.,1,2,Clos,2025-05-05,2025-08-12,2
+RSK-00056,PRJ-0017,Planning,Juge tirer ville sembler fonder.,1,3,Ouvert,2026-07-15,,3
+RSK-00057,PRJ-0017,Fournisseur,Détacher scène mode secours ensemble autorité heure gauche ceci.,5,1,Clos,2025-01-11,2025-05-03,5
+RSK-00058,PRJ-0017,Planning,Rompre danser savoir partie lèvre occasion descendre bientôt souvenir matin aile.,3,5,Clos,2025-06-03,2026-03-08,15
+RSK-00059,PRJ-0017,Fournisseur,Accent soit semblable essuyer commander reposer.,1,5,Clos,2025-02-18,2025-11-07,5
+RSK-00060,PRJ-0017,Qualité,Été dégager digne inutile ouvrir droite environ découvrir ne.,2,1,Clos,2025-11-20,2026-08-11,2
+RSK-00061,PRJ-0018,Qualité,Livrer tête adresser permettre figure milieu couvrir rue franc jeunesse.,2,4,Clos,2025-07-31,2026-02-13,8
+RSK-00062,PRJ-0018,Qualité,Lien créer bas troubler fonder visible ne scène long prier assister.,2,4,Clos,2025-12-15,2026-02-06,8
+RSK-00063,PRJ-0018,Qualité,Désirer fils aussitôt banc réponse cercle appartement vieillard certainement.,5,3,Ouvert,2025-07-14,,15
+RSK-00064,PRJ-0018,Planning,Port dieu groupe moindre comme.,1,5,Clos,2025-12-03,2026-02-13,5
+RSK-00065,PRJ-0019,Planning,Remplacer tard système appuyer cabinet lumière instinct intéresser rouge.,3,3,Clos,2024-10-09,2025-10-26,9
+RSK-00066,PRJ-0019,Qualité,Ensemble satisfaire fils branche rien.,2,2,Ouvert,2025-08-23,,4
+RSK-00067,PRJ-0020,Qualité,Un posséder hauteur condition.,3,1,Clos,2026-02-20,2026-06-27,3
+RSK-00068,PRJ-0020,Fournisseur,Remettre mode cou oreille parti gris consulter question coeur appuyer.,2,1,Clos,2025-05-18,2026-04-16,2
+RSK-00069,PRJ-0020,Technique,Muet vif éloigner étranger sentiment occasion sommeil rompre passion déposer.,1,4,Ouvert,2026-03-04,,4
+RSK-00070,PRJ-0021,Fournisseur,Arriver objet ailleurs victime rouge position nouveau repousser matin.,4,4,Ouvert,2025-06-27,,16
+RSK-00071,PRJ-0021,Qualité,Te dehors avenir respirer intérêt montrer course vieil terrible peuple.,2,4,Clos,2026-08-13,2026-08-25,8
+RSK-00072,PRJ-0021,Planning,Battre occasion briser signer mien rang grand chasse.,4,1,Clos,2025-12-18,2026-01-24,4
+RSK-00073,PRJ-0022,Qualité,Changer naturellement promettre dur pied écarter sombre.,4,5,Ouvert,2026-01-05,,20
+RSK-00074,PRJ-0022,Planning,Passer guère étage porte sentir depuis capable signe journal établir.,2,3,Clos,2026-08-29,2026-09-01,6
+RSK-00075,PRJ-0023,Qualité,Moyen promettre fait mur dangereux espérer.,1,3,Clos,2026-08-01,2026-08-13,3
+RSK-00076,PRJ-0023,Fournisseur,Tendre histoire passer paraître chose son durer.,3,2,Clos,2026-04-14,2026-07-24,6
+RSK-00077,PRJ-0024,Fournisseur,Satisfaire portier saint vague travers joie fidèle toile animal.,3,3,Ouvert,2026-05-01,,9
+RSK-00078,PRJ-0024,Qualité,Également choix l'un erreur tenter angoisse sauvage police traîner détail plus.,3,3,Ouvert,2025-07-09,,9
+RSK-00079,PRJ-0024,Fournisseur,Parcourir attention payer voisin vendre.,1,1,Clos,2025-03-05,2025-04-01,1
+RSK-00080,PRJ-0025,Planning,Prix résistance présent police santé âge.,2,2,Clos,2025-09-23,2026-04-06,4
+RSK-00081,PRJ-0025,Qualité,Pareil dehors travers comme bon douleur chef.,3,5,Clos,2026-01-01,2026-04-13,15
+RSK-00082,PRJ-0025,Qualité,Encore on front davantage aucun soir.,5,5,Clos,2026-01-31,2026-08-30,25
+RSK-00083,PRJ-0025,Planning,Front pouvoir fleur précipiter forêt.,4,5,Ouvert,2026-01-04,,20
+RSK-00084,PRJ-0026,Technique,Quand complet certain pont silencieux détruire venir accepter.,4,5,Ouvert,2026-05-08,,20
+RSK-00085,PRJ-0026,Qualité,Poète remonter sauter dessiner pain énergie désespoir professeur vite.,3,4,Clos,2025-06-29,2025-12-03,12
+RSK-00086,PRJ-0026,Technique,Dominer tourner tombe présence importance effort.,4,3,Ouvert,2025-02-23,,12
+RSK-00087,PRJ-0027,Fournisseur,Dernier donner durer embrasser ci intention doute.,1,3,Clos,2026-01-28,2026-05-14,3
+RSK-00088,PRJ-0028,Qualité,Attitude signifier femme intérieur autrement troubler jardin dresser vieillard.,3,2,Clos,2025-09-15,2025-10-28,6
+RSK-00089,PRJ-0028,Planning,Poste fortune curieux goutte qui.,5,5,Ouvert,2026-08-08,,25
+RSK-00090,PRJ-0028,Planning,Plaire fenêtre existence interrompre puissant lier air hier.,2,3,Ouvert,2026-04-20,,6
+RSK-00091,PRJ-0028,Fournisseur,Ou vouloir hier enlever étude réunir moyen bonheur penser.,3,1,Clos,2025-06-03,2026-08-03,3
+RSK-00092,PRJ-0028,Fournisseur,Action jaune parler voisin être cerveau hésiter chanter.,1,5,Ouvert,2026-06-28,,5
+RSK-00093,PRJ-0029,Fournisseur,Ne campagne jusque dessiner effacer parce que.,2,5,Clos,2025-08-16,2026-02-08,10
+RSK-00094,PRJ-0029,Planning,Cesse oeil parcourir ensemble peur mien.,4,3,Clos,2025-10-05,2026-01-10,12
+RSK-00095,PRJ-0029,Qualité,Bande larme froid rêver depuis acte préparer approcher sentier mort port.,5,1,Ouvert,2024-11-26,,5
+RSK-00096,PRJ-0029,Technique,Expérience rire avec compter histoire empire entretenir pendant réflexion obtenir.,4,4,Ouvert,2024-10-11,,16
+RSK-00097,PRJ-0030,Fournisseur,Premier dame saisir et appartement épais si travers dernier immense.,4,4,Clos,2024-10-23,2026-04-03,16
+RSK-00098,PRJ-0030,Fournisseur,Genou bande eh fond avenir troubler en seulement esprit.,1,2,Ouvert,2026-01-18,,2
+RSK-00099,PRJ-0031,Qualité,Bon voilà portier dresser discours général image médecin facile.,5,1,Clos,2026-07-13,2026-07-26,5
+RSK-00100,PRJ-0031,Fournisseur,Soumettre trésor auprès leur ordre.,1,2,Ouvert,2026-08-22,,2
+RSK-00101,PRJ-0032,Qualité,Enlever parler rapidement fatigue égal haine indiquer foi côte aspect.,5,1,Clos,2026-07-14,2026-07-18,5
+RSK-00102,PRJ-0032,Fournisseur,Froid représenter tel douze attendre.,4,5,Ouvert,2025-03-03,,20
+RSK-00103,PRJ-0032,Qualité,Roche commencer profiter lui défendre afin de camarade saint cercle secret.,2,5,Ouvert,2025-04-25,,10
+RSK-00104,PRJ-0032,Technique,Moyen armer maintenant toucher dire sueur.,4,1,Ouvert,2025-11-29,,4
+RSK-00105,PRJ-0032,Technique,Brûler lui guère faveur situation bruit expliquer lutter.,5,3,Ouvert,2025-03-07,,15
+RSK-00106,PRJ-0033,Technique,Raison inspirer voler toit rire sec science.,1,2,Ouvert,2025-08-01,,2
+RSK-00107,PRJ-0033,Planning,Gloire résistance vent beaux visible travailler manier.,1,5,Ouvert,2026-08-04,,5
+RSK-00108,PRJ-0033,Fournisseur,Si salle patron oser falloir cas traiter renverser.,1,4,Clos,2025-10-23,2025-11-27,4
+RSK-00109,PRJ-0033,Technique,Gloire cabinet reconnaître discuter camarade déposer.,5,4,Clos,2026-07-09,2026-08-05,20
+RSK-00110,PRJ-0033,Technique,Placer seul très mode volonté créer tantôt.,2,1,Ouvert,2025-01-16,,2
+RSK-00111,PRJ-0034,Technique,Partie pouvoir lueur second vague arrière inquiéter arrière.,4,3,Clos,2024-08-04,2025-08-04,12
+RSK-00112,PRJ-0034,Qualité,Delà pourtant foi parent position neuf.,4,2,Ouvert,2026-04-19,,8
+RSK-00113,PRJ-0034,Fournisseur,Ci fort réussir mur rencontrer dresser point de empire.,1,5,Ouvert,2025-12-30,,5
+RSK-00114,PRJ-0034,Technique,Chercher pur saint champ nommer ami roche résistance quart.,5,5,Ouvert,2025-09-08,,25
+RSK-00115,PRJ-0035,Qualité,Jusque souvenir joue avec présent fait risquer remarquer pièce nombreux devoir.,3,2,Clos,2026-02-01,2026-04-17,6
+RSK-00116,PRJ-0035,Planning,Mille durant construire écarter âme ci danger métier puissant fuir désir.,4,2,Ouvert,2026-02-13,,8
+RSK-00117,PRJ-0035,Technique,Envoyer triste changement en plante barbe remplacer nouveau projet.,2,1,Ouvert,2026-03-09,,2
+RSK-00118,PRJ-0035,Technique,Tout volonté posséder feu énergie.,1,1,Clos,2026-04-20,2026-06-12,1
+RSK-00119,PRJ-0035,Qualité,Manger interrompre ouvert ferme chose.,4,2,Clos,2026-03-28,2026-06-20,8
+RSK-00120,PRJ-0036,Planning,Chef portier queue rose inspirer plein.,4,4,Clos,2026-05-07,2026-05-15,16
+RSK-00121,PRJ-0036,Technique,Quelqu'Un fille pur angoisse bleu premier prétendre.,2,3,Clos,2026-06-22,2026-07-28,6
+RSK-00122,PRJ-0037,Qualité,Ce maison présence près saint.,4,1,Ouvert,2025-07-15,,4
+RSK-00123,PRJ-0037,Qualité,Flamme argent accompagner occuper escalier sou sien.,5,2,Clos,2026-05-11,2026-08-16,10
+RSK-00124,PRJ-0037,Planning,Étoile complètement du personne.,1,2,Clos,2025-04-29,2025-12-30,2
+RSK-00125,PRJ-0038,Technique,Étendre journée haïr son contre mort donner nuit famille.,3,1,Ouvert,2026-08-08,,3
+RSK-00126,PRJ-0039,Planning,Tranquille quant à comme distance gouvernement auteur tourner.,4,3,Clos,2024-03-29,2024-05-22,12
+RSK-00127,PRJ-0040,Fournisseur,Où occasion ni désigner toi certes dix vers seuil expliquer.,2,4,Ouvert,2025-12-15,,8
+RSK-00128,PRJ-0040,Planning,Odeur précieux premier horizon chaîne.,1,4,Ouvert,2025-10-02,,4
+RSK-00129,PRJ-0040,Fournisseur,Servir personnage reprendre gris public force mur entier bout travail.,3,4,Clos,2024-01-07,2025-04-25,12
+RSK-00130,PRJ-0040,Planning,Examiner facile terreur reculer déchirer voilà.,4,2,Clos,2024-11-28,2026-02-24,8
+RSK-00131,PRJ-0040,Planning,Tomber parce que vêtement or contenir allumer depuis flamme beau former fier.,1,4,Ouvert,2025-02-21,,4
