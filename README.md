@@ -9,6 +9,17 @@
 > **[docs/mapping-offre.md](docs/mapping-offre.md)** pour la correspondance
 > ligne à ligne entre chaque exigence de l'offre et sa preuve dans ce repo.
 
+## 📸 Aperçu
+
+**Page 1 — Portefeuille**
+![Dashboard pilotage projets — portefeuille](outputs/dashboard-page1-portefeuille.png)
+
+**Page 2 — Budget**
+![Dashboard pilotage projets — budget](outputs/dashboard-page2-budget.png)
+
+**Page 3 — Risques**
+![Dashboard pilotage projets — risques](outputs/dashboard-page3-risques.png)
+
 ## 🎯 Problème métier
 
 Une direction pilote ~40 projets d'ingénierie simultanés (jalons, budget,
@@ -96,6 +107,8 @@ projet-20-pilotage-projets-databricks/
 │   └── export_for_powerbi.py
 ├── powerbi/
 │   └── dashboard-pilotage-projets.pbix
+├── outputs/
+│   └── dashboard-page{1,2,3}-*.png   ← captures du dashboard (3 pages)
 ├── tests/
 │   └── test_transformations.py ← 11 tests, exécutés en CI (GitHub Actions + Azure Pipelines)
 └── docs/

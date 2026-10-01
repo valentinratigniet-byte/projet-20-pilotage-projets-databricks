@@ -6,9 +6,10 @@ portfolio) : étoile `dim_project` + 3 faits (`fact_budget_lines`,
 (relation 1:1 bidirectionnelle avec `dim_project`), 16 mesures DAX réparties
 en 4 dossiers d'affichage (Portefeuille, Budget, Jalons, Risques, Avancement).
 
-La construction des **visuels** (cartes, graphiques, mise en page) se fait
+La construction des **visuels** (cartes, graphiques, mise en page) s'est faite
 dans Power BI Desktop — le MCP ne pilote que la couche modèle, pas le canevas
-de rapport. Pages suggérées, cohérentes avec les KPI demandés par l'offre :
+de rapport. Captures des 3 pages dans `../outputs/` (et dans le
+[README principal](../README.md#-aperçu)). Détail des visuels :
 
 ## Page 1 — Portefeuille
 - Cartes : `Nb projets`, `Dérive budgétaire (€)`, `Dérive budgétaire (%)`,
