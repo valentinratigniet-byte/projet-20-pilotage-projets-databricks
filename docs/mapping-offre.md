@@ -31,7 +31,7 @@ preuve concrète dans ce repo.
 
 | Exigence | Preuve |
 |---|---|
-| Bac+5, expérience data engineering + BI/data analyse | Portfolio de 19 autres projets data (voir [index du portfolio](https://github.com/valentinratigniet-byte/portfolio-data)) |
+| Bac+5, expérience data engineering + BI/data analyse | Portfolio de 19 autres projets data (voir [index du portfolio](https://github.com/valentinratigniet-byte)) |
 | Python, PySpark, SQL | `src/transformations.py`, `sql/requetes_analytiques.sql`, `tests/` |
 | Azure Databricks, Azure DevOps | `databricks/` (Community Edition, gratuit — voir limite assumée dans `databricks/README.md`), `azure-pipelines.yml` |
 | Power BI | `powerbi/dashboard-pilotage-projets.pbix` |
