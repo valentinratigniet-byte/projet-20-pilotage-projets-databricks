@@ -29,9 +29,12 @@ de rapport. Captures des 3 pages dans `../outputs/` (et dans le
 - Carte : `Risques ouverts sévérité élevée`
 - Table : risques ouverts sévérité ≥ 15, triés par `severity` décroissant
 
-Thème portfolio (Petrol & Ambre) : réimporter
-`portfolio-data/brand/portfolio-theme.json` (Affichage → Thèmes) avant de
-construire les visuels, pour rester cohérent avec le reste du portfolio.
+Thème portfolio (Petrol & Ambre) déjà appliqué dans le `.pbix` fourni —
+Petrol `#137A8B` (signature), Ambre `#E4A93C` (accent), vert `#2FA36B` /
+rouge `#D9534F` (sémantique). Pour le réappliquer après une recréation du
+modèle (Affichage → Thèmes dans Power BI Desktop) : fichier de thème
+personnel de Valentin, non versionné dans ce repo — reproductible avec ces
+codes couleur sans dépendre du fichier original.
 
 Pour régénérer les données sources après un nouveau `python
 scripts/export_for_powerbi.py` : **Accueil → Actualiser** dans Power BI

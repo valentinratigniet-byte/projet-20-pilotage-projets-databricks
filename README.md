@@ -31,7 +31,7 @@ combien ?". Détail du besoin : **[docs/analyse-besoin.md](docs/analyse-besoin.m
 
 ```mermaid
 flowchart LR
-    A["data/generate_data.py\n5 CSV sources (sales volontairement)"] --> B["Azure Databricks Community Edition\n01_ingestion.py"]
+    A["data/generate_data.py\n5 CSV sources (erreurs injectées volontairement)"] --> B["Azure Databricks Community Edition\n01_ingestion.py"]
     B --> C["02_transformation.py\nnettoyage + fiabilisation (PySpark)"]
     C --> D["03_data_quality.py\n10 contrôles -> monitoring_dq_results"]
     C --> E["04_agregats_kpi.py\nmart_kpi_project (PySpark + SQL)"]
@@ -75,10 +75,17 @@ pour l'interroger.
 
 ## 🚀 Reproduire
 
+Prérequis : **Python 3.12** et un **JDK 17+** (requis par PySpark — vérifier
+avec `java -version` ; sinon `winget install Microsoft.OpenJDK.17` sur
+Windows, `apt install openjdk-17-jdk` sur Linux, `brew install openjdk@17`
+sur macOS). Sans JDK, `pytest` échoue avec une erreur peu explicite
+(`JAVA_GATEWAY_EXITED: Java gateway process exited before sending its port
+number`) — c'est le symptôme, la cause est toujours l'absence de JDK.
+
 ```bash
 pip install -r requirements.txt
 python data/generate_data.py           # régénère data/raw/ (5 CSV, seed=20)
-python -m pytest tests/ -v             # 11 tests PySpark (nécessite un JDK 17+)
+python -m pytest tests/ -v             # 11 tests PySpark
 ```
 
 Pour Databricks (Community Edition, gratuit) et le dashboard Power BI, voir
@@ -95,7 +102,8 @@ projet-20-pilotage-projets-databricks/
 ├── azure-pipelines.yml         ← pipeline Azure DevOps (même job que la CI GitHub)
 ├── data/
 │   ├── generate_data.py        ← génère le jeu de données synthétique (5 entités PMO)
-│   └── raw/*.csv
+│   ├── raw/*.csv                ← sorties brutes de generate_data.py
+│   └── powerbi_export/*.csv    ← sorties fiabilisées (export_for_powerbi.py), chargées par le .pbix
 ├── src/
 │   └── transformations.py      ← logique PySpark partagée notebooks + tests
 ├── databricks/
