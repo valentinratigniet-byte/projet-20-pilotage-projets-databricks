@@ -36,7 +36,7 @@ flowchart LR
     C --> D["03_data_quality.py\n10 contrôles -> monitoring_dq_results"]
     C --> E["04_agregats_kpi.py\nmart_kpi_project (PySpark + SQL)"]
     E --> F["Power BI\ndashboard-pilotage-projets.pbix"]
-    G["azure-pipelines.yml / GitHub Actions"] -. teste src/transformations.py .-> C
+    G["azure-pipelines.yml / GitHub Actions"] -.->|tests src/transformations.py| C
 ```
 
 `src/transformations.py` est le module unique : les 4 notebooks Databricks
