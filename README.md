@@ -20,6 +20,24 @@
 **Page 3 — Risques**
 ![Dashboard pilotage projets — risques](outputs/dashboard-page3-risques.png)
 
+### Exécution réelle sur Databricks (Free Edition, 11/10/2026)
+
+Les 4 notebooks exécutés sur le calcul serverless, CSV lus depuis un volume
+Unity Catalog. Les agrégats obtenus sont identiques au chiffre près à ceux du
+pipeline PySpark local (`data/powerbi_export/kpi_project.csv`).
+
+**Volume Unity Catalog — 5 CSV sources**
+![Databricks — volume raw](outputs/databricks-00-catalog.png)
+
+**02 — `clean_projects` après nettoyage**
+![Databricks — transformation](outputs/databricks-02-transformation.png)
+
+**03 — `monitoring_dq_results`** (FAIL sur `raw_*` = erreurs injectées volontairement, toutes corrigées côté `clean_*`)
+![Databricks — contrôles qualité](outputs/databricks-03-data-quality.png)
+
+**04 — agrégats SQL par programme sur `mart_kpi_project`**
+![Databricks — mart KPI](outputs/databricks-04-mart-kpi.png)
+
 ## 🎯 Problème métier
 
 Une direction pilote ~40 projets d'ingénierie simultanés (jalons, budget,
@@ -31,7 +49,7 @@ combien ?". Détail du besoin : **[docs/analyse-besoin.md](docs/analyse-besoin.m
 
 ```mermaid
 flowchart LR
-    A["data/generate_data.py\n5 CSV sources (erreurs injectées volontairement)"] --> B["Azure Databricks Community Edition\n01_ingestion.py"]
+    A["data/generate_data.py\n5 CSV sources (erreurs injectées volontairement)"] --> B["Databricks (Free Edition)\n01_ingestion.py"]
     B --> C["02_transformation.py\nnettoyage + fiabilisation (PySpark)"]
     C --> D["03_data_quality.py\n10 contrôles -> monitoring_dq_results"]
     C --> E["04_agregats_kpi.py\nmart_kpi_project (PySpark + SQL)"]
@@ -88,11 +106,10 @@ python data/generate_data.py           # régénère data/raw/ (5 CSV, seed=20)
 python -m pytest tests/ -v             # 11 tests PySpark
 ```
 
-Pour Databricks (Community Edition, gratuit) et le dashboard Power BI, voir
+Pour Databricks (Free Edition, gratuit) et le dashboard Power BI, voir
 `databricks/README.md`. `scripts/export_for_powerbi.py` exporte les tables
 fiabilisées et le mart KPI en CSV, importés tels quels dans le modèle Power BI
-(voir limite assumée dans `databricks/README.md` : Community Edition n'expose
-pas de SQL Warehouse pour une connexion live).
+(voir limite assumée dans `databricks/README.md`).
 
 ## 🗃️ Structure du repo
 
@@ -108,7 +125,7 @@ projet-20-pilotage-projets-databricks/
 │   └── transformations.py      ← logique PySpark partagée notebooks + tests
 ├── databricks/
 │   ├── 01_ingestion.py … 04_agregats_kpi.py
-│   └── README.md               ← comment exécuter sur Databricks Community Edition
+│   └── README.md               ← comment exécuter sur Databricks Free Edition
 ├── sql/
 │   └── requetes_analytiques.sql
 ├── scripts/
@@ -116,7 +133,8 @@ projet-20-pilotage-projets-databricks/
 ├── powerbi/
 │   └── dashboard-pilotage-projets.pbix
 ├── outputs/
-│   └── dashboard-page{1,2,3}-*.png   ← captures du dashboard (3 pages)
+│   ├── dashboard-page{1,2,3}-*.png   ← captures du dashboard (3 pages)
+│   └── databricks-0*.png             ← preuves d'exécution sur Databricks
 ├── tests/
 │   └── test_transformations.py ← 11 tests, exécutés en CI (GitHub Actions + Azure Pipelines)
 └── docs/
@@ -132,7 +150,7 @@ projet-20-pilotage-projets-databricks/
   seulement exclue des agrégats KPI — supprimer silencieusement une donnée
   réelle (même suspecte) serait une décision métier qui n'appartient pas au
   pipeline.
-- **Databricks Community Edition assumé comme limite** : pas de compte Azure
+- **Databricks Free Edition assumé comme limite** : pas de compte Azure
   d'entreprise disponible pour ce projet candidature — la logique de code est
   identique à un vrai Azure Databricks, seul le lien vers Power BI change
   (export plutôt que connexion SQL Warehouse live). Documenté, pas caché.
