@@ -7,9 +7,10 @@
 
 # COMMAND ----------
 
+import os
 import sys
 
-sys.path.append("/Workspace/pilotage-projets/src")
+sys.path.append(os.path.abspath("../src"))  # notebook lancé depuis databricks/, src/ à côté
 from transformations import RAW_TABLES, build_kpi_project  # noqa: E402
 
 # COMMAND ----------

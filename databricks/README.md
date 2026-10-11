@@ -7,19 +7,19 @@ testée en CI sans dépendre d'un compte externe).
 
 ## Étapes
 
-1. Créer un compte sur [community.cloud.databricks.com](https://community.cloud.databricks.com).
-2. Démarrer un cluster "Personal Compute" (Runtime ML ou standard, Spark 3.5.x).
-3. **Data > Add data > Upload file to DBFS**, uploader les 5 CSV de `data/raw/`
-   vers `/FileStore/pilotage-projets/raw/`.
-4. **Workspace**, importer le repo entier sous `/Workspace/pilotage-projets/`
-   (Repos > Add repo pointant sur ce dépôt GitHub, le plus simple — ou upload
-   manuel des `.py` en conservant la structure). Important : `transformations.py`
-   doit rester accessible sous `/Workspace/pilotage-projets/src/`, car chaque
-   notebook fait `sys.path.append("/Workspace/pilotage-projets/src")` — à
-   adapter dans les 4 notebooks si le chemin d'import choisi diffère.
-5. Exécuter dans l'ordre : `01_ingestion` → `02_transformation` → `03_data_quality`
-   → `04_agregats_kpi`, attachés au cluster créé à l'étape 2.
-6. Exporter `mart_kpi_project` (Data > table > **Export** ou `%sql SELECT * FROM
+> Community Edition a été remplacée par **Databricks Free Edition** (gratuite,
+> calcul serverless, Unity Catalog). Les étapes ci-dessous visent la Free Edition.
+
+1. Créer un compte sur [databricks.com/learn/free-edition](https://www.databricks.com/learn/free-edition).
+2. **Catalog > workspace > default > Create > Volume**, nommé `raw`, puis y
+   uploader les 5 CSV de `data/raw/` (→ `/Volumes/workspace/default/raw/`).
+3. **Workspace > Create > Git folder** pointant sur ce dépôt GitHub. Les notebooks
+   importent `src/transformations.py` par chemin relatif (`../src`), aucun chemin
+   à adapter.
+4. Ouvrir `databricks/`, exécuter dans l'ordre sur le calcul serverless :
+   `01_ingestion` → `02_transformation` → `03_data_quality` → `04_agregats_kpi`.
+   Les tables sont écrites dans `workspace.default`.
+5. Exporter `mart_kpi_project` (Data > table > **Export** ou `%sql SELECT * FROM
    mart_kpi_project` puis "Download full results") pour alimenter Power BI (voir
    `powerbi/`), Community Edition n'exposant pas d'endpoint SQL Warehouse
    accessible depuis l'extérieur pour une connexion Power BI live.

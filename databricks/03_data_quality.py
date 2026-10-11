@@ -8,12 +8,13 @@
 
 # COMMAND ----------
 
+import os
 import sys
 from datetime import datetime
 
 from pyspark.sql import functions as F
 
-sys.path.append("/Workspace/pilotage-projets/src")
+sys.path.append(os.path.abspath("../src"))  # notebook lancé depuis databricks/, src/ à côté
 from transformations import RAW_TABLES, clean_all, run_quality_checks  # noqa: E402
 
 # COMMAND ----------
