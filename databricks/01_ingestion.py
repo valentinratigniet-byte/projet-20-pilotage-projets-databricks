@@ -2,21 +2,22 @@
 # MAGIC %md
 # MAGIC # 01 — Ingestion
 # MAGIC Charge les CSV bruts (`data/raw/`) vers des tables Delta `raw_*`. Sur
-# MAGIC Databricks Community Edition (pas de Unity Catalog) : uploader le dossier
-# MAGIC `data/raw/` via **Data > Add data > Upload file to DBFS**, cible
-# MAGIC `/FileStore/pilotage-projets/raw/`, adapter `RAW_DIR` ci-dessous si besoin,
+# MAGIC Databricks Free Edition : uploader les CSV dans le volume Unity Catalog
+# MAGIC `workspace.default.raw` (voir `databricks/README.md`), cible
+# MAGIC `/Volumes/workspace/default/raw/`, adapter `RAW_DIR` ci-dessous si besoin,
 # MAGIC puis exécuter ce notebook en premier.
 
 # COMMAND ----------
 
+import os
 import sys
 
-sys.path.append("/Workspace/pilotage-projets/src")  # adapter au chemin réel du repo importé
+sys.path.append(os.path.abspath("../src"))  # notebook lancé depuis databricks/, src/ à côté
 from transformations import RAW_TABLES, load_raw_csvs  # noqa: E402
 
 # COMMAND ----------
 
-RAW_DIR = "/dbfs/FileStore/pilotage-projets/raw"  # à adapter : chemin d'upload dans le workspace
+RAW_DIR = "/Volumes/workspace/default/raw"  # volume Unity Catalog (Free Edition)
 
 dbutils.widgets.text("raw_dir", RAW_DIR)
 raw_dir = dbutils.widgets.get("raw_dir")
