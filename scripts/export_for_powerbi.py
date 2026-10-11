@@ -1,7 +1,7 @@
 """Exécute le pipeline (clean + KPI) en PySpark local et exporte les tables en
 CSV dans data/powerbi_export/, pour que Power BI Desktop les importe directement
 (pas de connecteur Spark nécessaire pour la démo — voir databricks/README.md
-pour le lien Databricks Community Edition -> Power BI par export identique).
+pour le lien Databricks Free Edition -> Power BI par export identique).
 """
 import csv
 import sys
