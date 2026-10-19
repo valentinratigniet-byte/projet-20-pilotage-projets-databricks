@@ -47,6 +47,10 @@ combien ?". Détail du besoin : **[docs/analyse-besoin.md](docs/analyse-besoin.m
 
 ## 🗂️ Architecture
 
+![Schéma d'architecture](docs/architecture.png)
+
+**[Ouvrir le schéma interactif](https://htmlpreview.github.io/?https://github.com/valentinratigniet-byte/projet-20-pilotage-projets-databricks/blob/main/docs/architecture.html)** (zoom, recherche, suivi des flux, export PNG/SVG). Généré avec [Archify](https://github.com/tt-a1i/archify) depuis [`docs/architecture.archify.json`](docs/architecture.archify.json).
+
 ```mermaid
 flowchart LR
     A["data/generate_data.py\n5 CSV sources (erreurs injectées volontairement)"] --> B["Databricks (Free Edition)\n01_ingestion.py"]
