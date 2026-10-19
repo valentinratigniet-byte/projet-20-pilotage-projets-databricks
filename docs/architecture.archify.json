@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "diagram_type": "dataflow",
+  "meta": {
+    "title": "Pilotage projets Databricks",
+    "quality_profile": "showcase",
+    "viewBox": [
+      1080,
+      500
+    ],
+    "legend": {
+      "mode": "hidden"
+    }
+  },
+  "stages": [
+    {
+      "label": "Sources"
+    },
+    {
+      "label": "Ingestion"
+    },
+    {
+      "label": "Fiabilisation"
+    },
+    {
+      "label": "Contrôle + KPI"
+    },
+    {
+      "label": "Restitution"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "csv",
+      "type": "external",
+      "label": "5 CSV",
+      "sublabel": "erreurs injectées",
+      "stage": 0,
+      "row": 1,
+      "tag": "seed fixe"
+    },
+    {
+      "id": "ingest",
+      "type": "backend",
+      "label": "01_ingestion",
+      "sublabel": "tables brutes",
+      "stage": 1,
+      "row": 1,
+      "brand": "databricks",
+      "width": 150
+    },
+    {
+      "id": "ci",
+      "type": "cloud",
+      "label": "CI",
+      "sublabel": "11 tests PySpark",
+      "stage": 2,
+      "row": 0,
+      "tag": "GitHub + Azure"
+    },
+    {
+      "id": "transform",
+      "type": "backend",
+      "label": "02_transfo",
+      "sublabel": "transformations.py",
+      "stage": 2,
+      "row": 1,
+      "tag": "PySpark"
+    },
+    {
+      "id": "kpi",
+      "type": "database",
+      "label": "04_kpi",
+      "sublabel": "mart_kpi_project",
+      "stage": 3,
+      "row": 1,
+      "tag": "SQL"
+    },
+    {
+      "id": "dq",
+      "type": "security",
+      "label": "03_data_quality",
+      "sublabel": "10 contrôles",
+      "stage": 3,
+      "row": 2,
+      "tag": "monitoring"
+    },
+    {
+      "id": "pbi",
+      "type": "frontend",
+      "label": "Power BI",
+      "sublabel": "pilotage projets",
+      "stage": 4,
+      "row": 1,
+      "tag": "+11,9 % dérive"
+    }
+  ],
+  "flows": [
+    {
+      "from": "csv",
+      "to": "ingest",
+      "label": "upload",
+      "variant": "emphasis",
+      "route": "straight"
+    },
+    {
+      "from": "ingest",
+      "to": "transform",
+      "label": "brut",
+      "variant": "emphasis",
+      "route": "straight"
+    },
+    {
+      "from": "ci",
+      "to": "transform",
+      "label": "même code",
+      "variant": "dashed",
+      "labelAt": [
+        530,
+        214
+      ]
+    },
+    {
+      "from": "transform",
+      "to": "kpi",
+      "label": "fiabilisé",
+      "variant": "emphasis",
+      "route": "straight"
+    },
+    {
+      "from": "transform",
+      "to": "dq",
+      "label": "contrôles",
+      "variant": "security",
+      "fromSide": "bottom",
+      "toSide": "left",
+      "via": [
+        [
+          530,
+          385
+        ]
+      ]
+    },
+    {
+      "from": "kpi",
+      "to": "pbi",
+      "label": "export CSV",
+      "variant": "emphasis",
+      "route": "straight"
+    }
+  ]
+}
