@@ -7,3 +7,9 @@ derby.log
 metastore_db/
 .pytest_cache/
 *.pbix.bak
+
+# Reçus de contrôle Archify
+docs/*.finalize.json
+docs/*.finalize-summary.json
+docs/*.delivery.json
+docs/*.browser-check.json
