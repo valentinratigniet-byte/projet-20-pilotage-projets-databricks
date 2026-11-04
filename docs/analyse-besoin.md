@@ -40,5 +40,5 @@ combien ?".
 - **V2 (piste, non développée)** : drill-down par catégorie de coût dans le
   temps (courbe planned vs actual mensuelle), alerte automatique (Teams/e-mail)
   quand `monitoring_dq_results` contient un `FAIL` — non construit ici pour
-  rester dans le périmètre réellement démontré par l'offre plutôt que
+  rester dans le périmètre réellement demandé par le besoin plutôt que
   d'ajouter une intégration non demandée.

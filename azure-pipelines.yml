@@ -1,5 +1,5 @@
 # Pipeline Azure DevOps — même job que la CI GitHub Actions (.github/workflows/ci.yml),
-# fourni pour démontrer la maîtrise d'Azure DevOps demandée par l'offre. Le repo
+# fourni pour démontrer la maîtrise d'Azure DevOps attendue sur ce type de poste. Le repo
 # reste hébergé sur GitHub (convention du portfolio) ; ce fichier est prêt à être
 # branché sur un projet Azure DevOps via "Pipelines > New > GitHub" en pointant
 # ce repo.

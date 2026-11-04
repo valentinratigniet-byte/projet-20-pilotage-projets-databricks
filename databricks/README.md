@@ -26,7 +26,6 @@ testée en CI sans dépendre d'un compte externe).
 
 Le dashboard Power BI est alimenté par export CSV (`scripts/export_for_powerbi.py`,
 résultats identiques à l'exécution Databricks) : la connexion live au SQL
-Warehouse de la Free Edition via le "Databricks Connector" n'a pas été testée. Sur un vrai environnement Azure Databricks (comme celui visé par
-l'offre), Power BI se connecterait directement au SQL Warehouse via le
+Warehouse de la Free Edition via le "Databricks Connector" n'a pas été testée. Sur un vrai environnement Azure Databricks (en entreprise), Power BI se connecterait directement au SQL Warehouse via le
 connecteur natif — la logique de transformation (`src/transformations.py`) est
 identique dans les deux cas.

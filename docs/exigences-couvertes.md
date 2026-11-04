@@ -1,12 +1,12 @@
-# Mapping offre → réalisations
+# Compétences attendues → réalisations
 
-Offre ciblée : **Data Engineer and Business Tool Developer F/H** (entreprise,
-BU, réf. (référence retirée)). Chaque exigence de l'offre est reliée à sa
-preuve concrète dans ce repo.
+Profil type : **Data Engineer / développeur BI** (Azure Databricks, PySpark,
+SQL, Power BI). Chaque compétence attendue est reliée à sa preuve concrète dans
+ce repo.
 
 ## Data engineering
 
-| Exigence de l'offre | Preuve dans ce projet |
+| Compétence attendue | Preuve dans ce projet |
 |---|---|
 | Recueillir, analyser, formaliser les besoins métier liés à la donnée | `docs/analyse-besoin.md` — cas d'usage PMO (jalons, budget, risques) traduit en modèle de données |
 | Traduire les besoins en cas d'usage exploitables | 5 entités sources (`data/generate_data.py`) → marts KPI exploitables par Power BI |
@@ -20,7 +20,7 @@ preuve concrète dans ce repo.
 
 ## Reporting et valorisation de la donnée
 
-| Exigence de l'offre | Preuve dans ce projet |
+| Compétence attendue | Preuve dans ce projet |
 |---|---|
 | Concevoir/développer/maintenir des rapports et tableaux de bord Power BI | `powerbi/dashboard-pilotage-projets.pbix` — modèle étoile (dim_project + 3 facts + mart KPI), mesures DAX |
 | Pertinence et fiabilité des indicateurs | Indicateurs calculés à partir des marts déjà contrôlés qualité (pas de recalcul divergent côté BI) |
@@ -35,12 +35,12 @@ preuve concrète dans ce repo.
 | Python, PySpark, SQL | `src/transformations.py`, `sql/requetes_analytiques.sql`, `tests/` |
 | Azure Databricks, Azure DevOps | `databricks/` (Free Edition, gratuit, exécution prouvée par `outputs/databricks-0*.png` — voir limite assumée dans `databricks/README.md`), `azure-pipelines.yml` |
 | Power BI | `powerbi/dashboard-pilotage-projets.pbix` |
-| Traduire des besoins métier en solutions concrètes | Domaine choisi (pilotage de projets d'ingénierie : jalons, budget, risques) reproduit volontairement le type de données "Management de Projet" cité dans l'offre |
+| Traduire des besoins métier en solutions concrètes | Domaine choisi (pilotage de projets d'ingénierie : jalons, budget, risques) reproduit volontairement le type de données "Management de Projet" d'un PMO industriel |
 
 ## Limite assumée, dite explicitement
 
 Ce projet est une démonstration de compétences construite pour candidater, pas
-un livrable en production chez entreprise — les données sont **synthétiques**
+un livrable en production en entreprise — les données sont **synthétiques**
 (générées, voir `data/generate_data.py`) et Databricks tourne en **Free
 Edition** (gratuit) plutôt que sur un vrai workspace Azure d'entreprise. La
 logique de code (PySpark, SQL, contrôles qualité, structure du pipeline) est en

@@ -2,12 +2,11 @@
 
 [![CI](https://github.com/valentinratigniet-byte/projet-20-pilotage-projets-databricks/actions/workflows/ci.yml/badge.svg)](https://github.com/valentinratigniet-byte/projet-20-pilotage-projets-databricks/actions/workflows/ci.yml)
 
-> Projet construit spécifiquement pour répondre à une offre : **Data Engineer
-> and Business Tool Developer F/H** (entreprise, BU, réf.
-> (référence retirée)) — reporter du management de projet, en Azure
-> Databricks/PySpark/SQL avec restitution Power BI. Voir
-> **[docs/mapping-offre.md](docs/mapping-offre.md)** pour la correspondance
-> ligne à ligne entre chaque exigence de l'offre et sa preuve dans ce repo.
+> Projet construit pour un profil type **Data Engineer / développeur BI** :
+> reporting du management de projet, en Azure Databricks/PySpark/SQL avec
+> restitution Power BI. Voir **[docs/exigences-couvertes.md](docs/exigences-couvertes.md)**
+> pour la correspondance ligne à ligne entre chaque compétence attendue et sa
+> preuve dans ce repo.
 
 ## 📸 Aperçu
 
@@ -142,7 +141,7 @@ projet-20-pilotage-projets-databricks/
 ├── tests/
 │   └── test_transformations.py ← 11 tests, exécutés en CI (GitHub Actions + Azure Pipelines)
 └── docs/
-    ├── mapping-offre.md        ← exigence de l'offre -> preuve dans ce repo
+    ├── exigences-couvertes.md  ← compétence attendue -> preuve dans ce repo
     ├── analyse-besoin.md
     └── data-dictionary.md
 ```
@@ -155,7 +154,7 @@ projet-20-pilotage-projets-databricks/
   réelle (même suspecte) serait une décision métier qui n'appartient pas au
   pipeline.
 - **Databricks Free Edition assumé comme limite** : pas de compte Azure
-  d'entreprise disponible pour ce projet candidature — la logique de code est
+  d'entreprise disponible pour ce projet — la logique de code est
   identique à un vrai Azure Databricks, seul le lien vers Power BI change
   (export plutôt que connexion SQL Warehouse live). Documenté, pas caché.
 - **Un seul module de transformation** : `src/transformations.py` évite la
@@ -163,11 +162,10 @@ projet-20-pilotage-projets-databricks/
   une autre" — la CI teste le code qui tourne réellement sur Databricks.
 - **Domaine "pilotage de projets"**, pas e-commerce comme le reste du
   portfolio : reproduit volontairement le type de données "Management de
-  Projet" cité par l'offre plutôt que de réutiliser un jeu de données déjà
+  Projet" d'un PMO industriel plutôt que de réutiliser un jeu de données déjà
   existant qui n'aurait pas eu le même sens métier.
 
 ---
 
-*Projet 20 du [Portfolio Data](https://github.com/valentinratigniet-byte). Construit pour
-candidater à l'offre [(référence retirée)](docs/mapping-offre.md) — premier projet du
+*Projet 20 du [Portfolio Data](https://github.com/valentinratigniet-byte). Premier projet du
 portfolio sur Azure Databricks/PySpark/Azure DevOps.*

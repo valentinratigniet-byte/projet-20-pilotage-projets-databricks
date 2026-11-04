@@ -39,7 +39,7 @@ n_failed = dq.filter("status = 'FAIL'").count()
 if n_failed > 0:
     # Sur un vrai environnement : notification (webhook Teams/e-mail) au lieu du
     # print — voir README § "Aller plus loin" pour ne pas sur-construire une
-    # intégration Teams non demandée par l'offre.
+    # intégration Teams non demandée par le besoin.
     print(f"⚠️ {n_failed} contrôle(s) qualité en échec — voir monitoring_dq_results")
 else:
     print("✅ Tous les contrôles qualité sont PASS")
